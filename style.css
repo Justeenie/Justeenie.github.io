@@ -1,17 +1,5 @@
-body {
-	width: 100%;
-	font-family: Arial, Helvetica, sans-serif;
-	margin: 0;
-	background-color: #55CBCD;
-	position: center;
-}
 
-.contentbackground {
-	background: url("background.png") top center fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: relative;
-}
+/*=====NAV BAR STARTS HERE=====NAV BAR STARTS HERE=====NAV BAR STARTS HERE=====NAV BAR STARTS HERE=====NAV BAR STARTS HERE=====NAV BAR STARTS HERE=====NAV BAR STARTS HERE===== */
 
 .navbar {
 	position: fixed;
@@ -41,7 +29,7 @@ body {
 
 }
 
-	/* Dropdown button */
+/* Dropdown button */
 .dropdown .dropbtn {
 	width: 100%;
 	padding: 10px 0px 10px 0px;
@@ -73,7 +61,7 @@ body {
 	width: 100%;
 }
 
-	/* Links inside the dropdown */
+/* Links inside the dropdown */
 .dropdown-content a {
 	float: none;
 	color: black;
@@ -89,39 +77,67 @@ body {
 
 }
 
+
+/*=====NAV BAR ENDS HERE=====NAV BAR ENDS HERE=====NAV BAR ENDS HERE=====NAV BAR ENDS HERE=====NAV BAR ENDS HERE=====NAV BAR ENDS HERE=====NAV BAR ENDS HERE===== */
+
+/* BODY "META" INFO */
+body {
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	background-color: #55CBCD;
+	position: center;
+}
+
+.contentbackground {
+	background: url("background.png") top center fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+
 /* Grid sutff is all here */
 .grid-container {
 	display: grid;
 	grid-gap: 10px;
 	grid-template-areas:
-		'item1 item1'
-		'item2 item3'
-		'item4 item4'
-		'item5 item6';
+		'a a a a a a'
+		'b b b c c c'
+		'd d d d d d'
+		'e e f f g g';
 	background-color: transparent;
-	padding: 10% 10% 1000vh 10%;
+	padding: 3% 10% 1000vh 10%;
 
 	color: #48301c;
 	font-family: inherit
 }
 
+.item1 { grid-area: a;}
+.item2 { grid-area: b;}
+.item3 { grid-area: c;}
+.item4 { grid-area: d;}
+.item5 { grid-area: e;}
+.item6 {
+	grid-area: f;
+}
+.item6-content{
+	background: url("WebDev.png") center no-repeat;
+	background-size: contain;
+}
+.item7 { grid-area: g;}
+
 .grid-container > div{
-	background-color: rgba(255, 255, 255, 0.5);
-	padding: 100px 50px;
 	font-size: 30px;
-	text-align: center;
+	text-align: center ;
+}
+.grid-container > div > div{
+	background-color: rgba(255, 255, 255, 0.5); 
+	padding: 130px 70px;
+	margin: 20px;
 }
 
-/*
-.item1 {
-	grid-column-start: 1;
-	grid-column-end: 4;
-}
-*/
 
-.item1 > h1, .item1 > img{
-	display: inline-block;
-}
 
 
 

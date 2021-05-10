@@ -93,7 +93,11 @@ body {
 .grid-container {
 	display: grid;
 	grid-gap: 10px;
-	grid-template-columns: auto auto auto;
+	grid-template-areas:
+		'item1 item1'
+		'item2 item3'
+		'item4 item4'
+		'item5 item6';
 	background-color: transparent;
 	padding: 10% 10% 1000vh 10%;
 
@@ -108,16 +112,16 @@ body {
 	text-align: center;
 }
 
+/*
 .item1 {
 	grid-column-start: 1;
 	grid-column-end: 4;
 }
+*/
 
 .item1 > h1, .item1 > img{
 	display: inline-block;
 }
 
-.item2 {
-	grid
-}
+
 

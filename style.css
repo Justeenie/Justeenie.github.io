@@ -1,3 +1,7 @@
+/*HTML "SET UP"*/
+html {
+	scroll-behavior: smooth;
+  }
 
 /*=====NAV BAR STARTS HERE=====NAV BAR STARTS HERE=====NAV BAR STARTS HERE=====NAV BAR STARTS HERE=====NAV BAR STARTS HERE=====NAV BAR STARTS HERE=====NAV BAR STARTS HERE===== */
 
@@ -26,8 +30,9 @@
 /* The dropdown container */
 .dropdown {
 	overflow: hidden;
-
 }
+
+
 
 /* Dropdown button */
 .dropdown .dropbtn {
@@ -47,8 +52,8 @@
 	background-color: white;
 	color: #55CBCD;
 	/*box-shadow: -4px 8px 16px 0px rgba(0,0,0,0.2);  shadow on hover [DISABLED]*/
-
 }
+
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
@@ -61,6 +66,7 @@
 	width: 100%;
 }
 
+
 /* Links inside the dropdown */
 .dropdown-content a {
 	float: none;
@@ -71,10 +77,10 @@
 	text-align: center;
 }
 
+
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
 	display: block;
-
 }
 
 
@@ -106,7 +112,8 @@ body {
 		'j j j j j k k l l l l l'
 		'b b b b b b c c c c c c'
 		'd d d d d h h i i i i i'
-		'e e e e f f f f g g g g';
+		'e e e e e e f f f f f f'
+		'g g g g g g m m m m m m';
 	margin: 0 10% 0 10%;
 	padding: 10vh 0 10vh 0;
 	color: #48301c;
@@ -209,21 +216,29 @@ body {
 	background-size: contain;
 }
 
-
 .item6 {
 	background-color: rgba(255, 255, 255, 0.5);
 	grid-area: f;
 }
 .item6-content{
+	background: url("LaserCut.png") center no-repeat;
+	background-size: contain;
+}
+
+.item7 {
+	background-color: rgba(255, 255, 255, 0.5);
+	grid-area: g;
+}
+.item7-content{
 	background: url("WebDev.png") center no-repeat;
 	background-size: contain;
 }
-.item7 {
+.item8 {
 	background-color: rgba(255, 255, 255, 0.5); 
-	grid-area: g;
+	grid-area: m;
 }
 
-.item7-content{
+.item8-content{
 	background: url("Arduino.png") center no-repeat;
 	background-size: contain;
 }

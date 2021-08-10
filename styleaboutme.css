@@ -102,157 +102,38 @@ body {
 	position: relative;
 }
 
-
 /* Grid sutff is all here */
 .grid-container {
 	display: grid;
 	grid-gap: 10px;
 	grid-template-areas:
-		'a a a a a a a a a a a a'
-		'j j j j j k k l l l l l'
-		'b b b b b b c c c c c c'
-		'd d d d d h h i i i i i'
-		'e e e e e e f f f f f f'
-		'g g g g g g m m m m m m';
+        'a a a a'
+		'b c c c'
+		'b c c c';
 	margin: 0 10% 0 10%;
 	padding: 10vh 0 10vh 0;
 	color: #48301c;
 	font-family: inherit;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
-.item1 { 
-	background-color: rgba(255, 255, 255, 0.5);
-	grid-area: a;
-	
+.item1{
+    grid-area: a;
 }
 
-.item1-content{
-	padding: 10px 10px !important;
+.item2{
+    grid-area: b;
+    
 }
 
-.item1-content > p > a > img{
-	width: 1em;
-}
+.item2 > img{
+    width: 30vw;
 
-.learna{
-	grid-area: j;
-}
-
-.learn{
-	grid-area: k;
-}
-
-.learnb{
-	grid-area: l;
-}
-
-.learna, .learnb {
-	overflow: hidden;
-	text-align: center;
-	background-color: transparent;
-	background-image: url("pink-dot.svg");
-	background-repeat: space;
-	background-size: 50px;
-	background-position: 0 50%;
-	margin: 40px 0 40px 0;
-}
-
-
-.item2 { 
-	background-color: rgba(255, 255, 255, 0.5);
-	grid-area: b;
-}
-
-
-
-.item2-content{
-	background: url("Horse.png") center no-repeat;
-	background-size: contain;
-}
-
-.item3 { 
-	background-color: rgba(255, 255, 255, 0.5);
-	grid-area: c;
-}
-
-.item3-content{
-	background: url("Music.png") center no-repeat;
-	background-size: contain;
-}
-
-.item4a{
-	grid-area: d;
-}
-.item4 { 
-	grid-area: h;
-}
-.item4b{
-	grid-area: i;
-}
-
-.item4a, .item4b {
-	overflow: hidden;
-	text-align: center;
-	background-color: transparent;
-	background-image: url("pink-dot.svg");
-	background-repeat: space;
-	background-size: 50px;
-	background-position: 0 50%;
-	margin: 40px 0 40px 0;
-}
-
-
-.item4b{
-	grid-area: i;
-}
-
-.item5 {
-	background-color: rgba(255, 255, 255, 0.5); 
-	grid-area: e;
-}
-
-.item5-content{
-	background: url("3DPrint.png") center no-repeat;
-	background-size: contain;
-}
-
-.item6 {
-	background-color: rgba(255, 255, 255, 0.5);
-	grid-area: f;
-}
-.item6-content{
-	background: url("LaserCut.png") center no-repeat;
-	background-size: contain;
-}
-
-.item7 {
-	background-color: rgba(255, 255, 255, 0.5);
-	grid-area: g;
-}
-.item7-content{
-	background: url("WebDev.png") center no-repeat;
-	background-size: contain;
-}
-.item8 {
-	background-color: rgba(255, 255, 255, 0.5); 
-	grid-area: m;
-}
-
-.item8-content{
-	background: url("Arduino.png") center no-repeat;
-	background-size: contain;
-}
-
-.grid-container > div{
-	font-size: 30px;
-	text-align: center ;
-}
-.grid-container > div > div{ 
-	padding: 130px 70px;
 	margin: 20px;
 }
 
-
-
-
-
+.item3{
+    grid-area: c;
+    line-height: 1.5;
+	margin: 20px;
+}

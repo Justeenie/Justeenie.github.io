@@ -1,86 +1,285 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>About Me</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Page Title</title>
-		<link rel="stylesheet" type="text/css" href="horsechesspiece.css" />
-		<link rel="icon" href="favicon.ico">
-    </head>
+
+<head>
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="horsechesspiece.css" />
+    <link rel="icon" href="favicon.ico">
+</head>
 
 
-    <body>
-        <div class="navbar">
-			<a href="home.html">Home</a>
-			<a href="aboutme.html">About Me</a>
-			<a href="home.html#mylearning">My Learning</a>
-			<div class="dropdown">
-				<button class="dropbtn" href="#myproject">
-					My Project
-				</button>
-				<div class="dropdown-content">
-					<a href="#3dprint">3D Printing</a>
-					<a href="#arduino">Arduino</a>
-					<a href="#lasercutting">Laser Cutting</a>
-					<a href="#webdev">Web Development</a>
-				</div>
-			</div>
-		</div>
+<body>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="home.html#mylearning">My Learning</a>
+        <div class="dropdown">
+            <button class="dropbtn" href="#myproject">
+                My Project
+            </button>
+            <div class="dropdown-content">
+                <a href="#3dprint">3D Printing</a>
+                <a href="#arduino">Arduino</a>
+                <a href="#lasercutting">Laser Cutting</a>
+                <a href="#webdev">Web Development</a>
+            </div>
+        </div>
+    </div>
 
 
-        <div class="contentbackground">
-            <div class="content">
-                <div class="item1">
-                    <h1>Horse Chess Piece</h1>
-                    
-                </div>
-                <div class="item2">
-                    <h2>3D printing and it's applications</h2>
-                    
-                    <p>3D printing is a relatively recent development in technology where an object can be modeled on a computer software
-                        and the digital file could then be translated into printing instructions in order to construct the model. The process
-                        of 3D printing can be simplified to 3 steps.  
-                       
-                    </p>
-                    <ol>
-                        <li>
-                            Firstly, a 3D model must be designed using a modeling software such as Solidworks, TinkerCAD,
-                             Autodesk Inventor. In this module, I was taught how to use Fusion360 to design a 3d model.
-                        </li>
-                        <li>
-                            The second step is to prepare the model for printing such as adding supports to the model and adjusting the
-                             printer's settings.
-                        </li>
-                        <li>
-                            The last step is to simply save the file into a memory device such as an SD card or a USB thumb drive in order
-                            to transfer the file to the printer.
-                        </li>
-                    </ol>
-                    <p>For this module, we were given the assignment to create a 3D model of a Horse Chess Piece on Fusion 360, prepare the
-                        model for printing using CURA, and then print it out using the Ultimaker 2 printer in the FabLab.
-                    </p>
-                    <div class="grid1">
-                        <div class="grid1a">
-                            <img src="Fusion360Horse.png">
-                        </div>
-                        <div class="grid1b">
-                            <img src="arrow.png">
-                        </div>
-                        <div class="grid1c">
-                            <img src="curahorse.png">
-                        </div>
-                        <div class="grid1d">
-                            <img src="arrow.png">
-                        </div>
-                        <div class="grid1e">
-                            <img src="printer.png">
-                        </div>
+    <div class="contentbackground">
+        <div class="content">
+            <div class="item1">
+                <h1>Horse Chess Piece</h1>
+            </div>
+
+            <div class="item2">
+                <h2>3D printing and it's applications</h2>
+
+                <p>3D printing is a relatively recent development in technology where an object can be modeled on a
+                    computer software
+                    and the digital file could then be translated into printing instructions in order to construct the
+                    model. The model
+                    is contructed by dividing the object into many smaller 'slices' where the machine will melt a
+                    material down (such as
+                    PLA, ABS, ASA and many more), then deposit the material layer by layer to eventually construct the
+                    entire 3D model.
+                    Each layer can be given a specified height to vary the resolution of the print, and the speed of the
+                    print. Typically,
+                    the layer height could be adjusted to anywhere between 0.1mm to 0.3mm (this depends on the printer
+                    and nozzle diameter).
+                </p>
+                <img src="slice.jpg" class="slice"><img src="printing.gif" class="printing">
+
+                <p>
+                    The process of 3D printing can be simplified to 3 steps.
+                </p>
+                <ol>
+                    <li>
+                        Firstly, a 3D model must be designed using a modeling software such as Solidworks, TinkerCAD,
+                        Autodesk Inventor. In this module, I was taught how to use Fusion360 to design a 3D model.
+                    </li>
+                    <li>
+                        The second step is to prepare the model for printing such as adding supports to the model,
+                        adjusting the
+                        printer's settings and slicing the model into many layers.
+                    </li>
+                    <li>
+                        The last step is to simply save the file into a memory device such as an SD card or a USB thumb
+                        drive in order
+                        to transfer the file to the printer.
+                    </li>
+                </ol>
+                <p>For this module, we were given the assignment to create a 3D model of a Horse Chess Piece on Fusion
+                    360, prepare the
+                    model for printing using CURA, and then print it out using the Ultimaker 2 printer in the FabLab.
+                </p>
+
+                <div class="grid1">
+                    <div class="grid1a">
+                        <img src="Fusion360Horse.png">
+                    </div>
+                    <div class="grid1b">
+                        <img src="arrow.png">
+                    </div>
+                    <div class="grid1c">
+                        <img src="curahorse.png">
+                    </div>
+                    <div class="grid1d">
+                        <img src="arrow.png">
+                    </div>
+                    <div class="grid1e">
+                        <img src="printer.png">
                     </div>
                 </div>
-            </div>    
+                <p>Below, I will show you how I have designed and printed the Horse Chess Piece!</p>
+
+
+
+                <h2>Designing the Horse Chess Piece in Fusion 360</h2>
+
+                <div class="step1">
+                    <p>
+                        A horse chess piece has an irregular and odd shape (many curves and arcs) which is hard to
+                        replicate using just
+                        geometrical shapes. Instead, I borrowed an image of a horse chess piece to use as a guideline,
+                        known as a
+                        canvas in Fusion 360. It is very similar to using tracing paper on top of a picture as a guide.
+                        Firstly,
+                        I started by designing the base of the chess piece by using lines and arc to trace out half of
+                        the base's
+                        vertical cross section.
+                    </p>
+                    <img src="canvas.png" class="canvas">
+                </div>
+
+                <div class="step2">
+                    <p>
+                        There are some restrictions when it comes
+                        to 3D printing and these restrictions must be considered while designing the object. One such
+                        restriction
+                        is that objects cannot overhang more than 45ᵒ or they would require supports. As seen on the
+                        right, I had one arc
+                        that <b>exceeds 45ᵒ</b>, and I had to change that angle if I wanted the object to be printed
+                        well.
+                    </p>
+                    <img src="overhang.png" class="overhang">
+                    <img src="overhangerror.png" class="overhangerror">
+                </div>
+                <div class="step2b">
+                    <p>
+                        I changed the angle of the arcs, although the current shape of the base slightly differs from
+                        the original, I have
+                        ensured that the height and diameter is the same.The next step is to take this cross section and
+                        <b>revolve</b> it.
+                        To revolve a sketch, it requires an axis, therefore I have added one (indicated by the vertical
+                        dotted line).
+                    </p>
+                    <img src="horsebasesketch.png" class="horsebasesketch"> <img src="horsebase.png" class="horsebase">
+                </div>
+
+                <div class="step3">
+                    <p>
+                        Moving on, I repeated the process of tracing the canvas for the horse. Some features such as the
+                        mouth of the
+                        horse were harder to trace due to the arcs being very irregular, however taking some time to
+                        change the curvature and
+                        angles of the arcs eventually made the shape satisfactory. Then, I <b>extruded</b> the sketch. I
+                        left out the ears
+                        as I wanted to try something more interesting for them.
+                    </p>
+                    <img src="horsesketch.png" class="horsesketch"> <img src="horseextrude.png" class="horseextrude">
+                </div>
+
+                <div class="step4">
+                    <p>
+                        At this point, I decided to add in the eyes of the horse using a few arcs to make the eyes a little more 
+                        pointed (personal preference) and used the <b>extrude</b> function to cut the eyes into the piece.
+                        I will admit I got a little carried away with the ears but basically I started by creating a
+                        plane which is angled to the
+                        the top of the horse. Following that I used the <b>Loft function</b> to creat a solid body so
+                        that I could 'carve out' the ears
+                        later on.
+                    </p>
+                    <img src="horseearplane.png" class="horseearplane"><img src="horseearloft.png" class="horseearloft">
+                </div>
+
+                <div class="step5">
+                    <p>
+                        Thereafter, I made various shapes to cut out portions of the solid block above the horse to make
+                        the ears. I only needed
+                        to make one ear as I could then <b>mirror</b> the completed ear onto the other side of the
+                        horse.
+                    </p>
+
+                    <img src="horseear.gif" class="horseear">
+                </div>
+
+                <div class="step6">
+                    <p>
+                        Last but not least, I <b>filleted</b> many edges of the horse chess to round the corners. This
+                        makes the piece both more
+                        aesthetically pleasing and prevent the piece from chipping easily.
+                    </p>
+
+                    <img src="horsefillet.png" class="horsefillet">
+                </div>
+                <div class="break1">
+                    <h3>
+                        And that is it for my Horse Chess Piece design in Fusion360!
+                        <br>
+                        Now onwards to adjusting printer settings and slicing using CURA.
+                    </h3>
+                </div>
+            </div>
+            <div class="item3">
+                <h2>
+                    Preparing the Horse Chess Piece for printing in CURA
+                </h2>
+                <div class="grid2">
+                    <p>
+                        There are many settings that can be changed using CURA for any given printer, but only a few key
+                        settings
+                        that are very important and are relavent to this horse chess piece. After changing the settings
+                        to
+                        suit this
+                        particular print, all I needed to do was to slice the model and export it to an SD card to start
+                        the
+                        print.
+                        To start off, I ensured that the printer <b>Ultimaker 2+</b> was selected and then imported my
+                        3D
+                        model from
+                        Fusion360 (as an .stl file).
+                    </p>
+                    <img src="ulticon.png" class="ulticon">
+                </div>
+
+                <div class="settings">
+                    <div class="settingstext">
+                        <ol>
+                            <li>
+                                Set the <b>layer height</b> to 0.2mm to print the horse chess piece with decent
+                                resolution
+                                and speed
+                            </li>
+                            <li>
+                                Set <b>infill density</b> to 20% as the horse chess piece does not need to be very study
+                                (will not undergo
+                                much stress)
+                            </li>
+                            <li>
+                                Generate <b>support</b> everywhere to ensure that the parts of the horse which overhang
+                                can
+                                be printed
+                            </li>
+                            <li>
+                                Lastly, I sliced the 3D model and checked the estimated duration of the print (optimaly
+                                below 1h so
+                                that I do not deny others from using the 3D printers in the FabLab)
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="settingsimg">
+                        <img src="quality.png" class="settingsimg1">
+                        <img src="down.png" class="settingsimg2">
+                        <img src="infill.png" class="settingsimg3">
+                        <img src="down.png" class="settingsimg4">
+                        <img src="support.png" class="settingsimg5">
+                        <img src="down.png" class="settingsimg6">
+                        <img src="duration.png" class="settingsimg7">
+                    </div>
+
+                    <h3>
+                        Clicking on <b>preview</b> allows me to see how exactly the model has been sliced along with
+                        how the CURA has generated the supports.
+                    </h3>
+
+                    <img src="sliced.png" class="sliced">
+
+                    <h3>
+                        Finally, I saved this to an SD card and used the 3D printer to print my Horse Chess Piece! Here is a short 
+                        timelapse of how the printing process looks like (credit to Ethan Ng from DMRO/FT/2A/02 for supplying me this
+                        footage to use as an example)
+                    </h3>
+                    <img src="timelapse.gif">
+                    <h3>
+                        As you can see in the looped video above, there are many supports stuck to the print.
+                        For the finishing touches, other than clipping off the supports, it is sometimes neccesary to file the piece a little.
+                    </h3>
+                    <h1 class="done">
+                        AND THAT'S IT! The Horse Chess Piece is done!
+                    </h1>
+                    <img src="horse.jpg" class="finalhorse">
+                </div>
+            </div>
         </div>
+    </div>
 
 
 
-    </body>
+</body>
+
 </html>

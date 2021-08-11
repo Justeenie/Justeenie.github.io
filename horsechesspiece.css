@@ -108,6 +108,14 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+.slice{
+    width: 50%;
+}
+
+.printing{
+    width: 50%;
+}
+
 .grid1{
     display: grid;
 	grid-gap: 10px;
@@ -164,4 +172,240 @@ body {
 
 .grid1e > img{
     width: 100%;
+}
+
+.step1{
+    display: grid;
+	grid-gap: 10px;
+	grid-template-areas:
+        'a a a b';
+	
+    padding: 10vh 0 10vh 0;
+}
+
+.step1 > p{
+    grid-area: a;
+    margin: 0;
+}
+
+.canvas{
+    grid-area: b;
+    width: 100%;
+    
+}
+
+.step2{
+    display: grid;
+	grid-gap: 10px;
+	grid-template-areas:
+        'f f f f g g'
+        'h h h h g g';
+	
+    padding: 10vh 0 10vh 0;
+}
+
+.step2 > p{
+    grid-area: f;
+    width: 100%;
+    margin: 0;
+}
+
+.overhang{
+    grid-area: h;
+    width: 90%;
+}
+
+.overhangerror{
+    grid-area: g;
+    width: 100%;
+}
+
+.step2b{
+    display: grid;
+	grid-gap: 10px;
+	grid-template-areas:
+        'a a a b c';
+	
+    padding: 10vh 0 10vh 0;
+}
+
+.step2b > p{
+    grid-area: a;
+    margin: 0;
+}
+
+.horsebasesketch{
+    grid-area: b;
+    width: 100%;
+}
+
+.horsebase{
+    grid-area: c;
+    width: 100%;
+}
+
+.step3{
+    display: grid;
+	grid-gap: 10px;
+	grid-template-areas:
+        'a a b b c';
+	
+    padding: 10vh 0 10vh 0;
+}
+
+.step3 > p{
+    grid-area: a;
+    margin: 0;   
+}
+
+.horsesketch{
+    grid-area: b;
+    width: 100%;
+}
+
+.horseextrude{
+    grid-area: c;
+    width: 100%;
+}
+
+.step4{
+    display: grid;
+	grid-gap: 10px;
+	grid-template-areas:
+        'a a a b c';
+	
+    padding: 10vh 0 10vh 0;
+}
+
+.step4 > p{
+    grid-area: a;
+    margin: 0;   
+}
+
+.horseearplane{
+    grid-area: b;
+    width: 100%;
+}
+
+.horseearloft{
+    grid-area: c;
+    width: 100%;
+}
+
+.step5{
+    display: grid;
+	grid-gap: 10px;
+	grid-template-areas:
+        'a a a b b';
+	
+    padding: 10vh 0 10vh 0;
+}
+
+.step5 > p{
+    grid-area: a;
+    margin: 0;   
+}
+
+.horseear{
+    grid-area: b;
+    width: 100%;
+}
+
+.step6{
+    display: grid;
+	grid-gap: 10px;
+	grid-template-areas:
+        'a a a b';
+	
+    padding: 10vh 0 10vh 0;
+}
+
+.step6 > p{
+    grid-area: a;
+    margin: 0;   
+}
+
+.horsefillet{
+    grid-area: b;
+    width: 100%;
+}
+
+.break1{
+    text-align: center;
+    margin: 0 0 10vh 0;
+}
+
+.grid2{
+    display: grid;
+	grid-gap: 10px;
+	grid-template-areas:
+        'a a a b';
+    padding: 10vh 0 10vh 0;
+}
+
+.grid2 > p{
+    grid-area: a;
+    margin: 0;
+}
+
+.ulticon{
+    grid-area: b;
+}
+
+.settingsimg1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.settingsimg2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+.settingsimg3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.settingsimg4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+.settingsimg5 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.settingsimg6 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+.settingsimg7 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.sliced{
+    width: 100%;
+}
+
+.done{
+    text-align: center;
+}
+
+.finalhorse{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }

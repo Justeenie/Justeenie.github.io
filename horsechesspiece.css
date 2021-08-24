@@ -330,6 +330,11 @@ body {
     width: 100%;
 }
 
+.step7 > iframe{
+    width: 100%;
+    height: 70vh;
+}
+
 .break1{
     text-align: center;
     margin: 0 0 10vh 0;
@@ -401,6 +406,10 @@ body {
 
 .done{
     text-align: center;
+}
+
+.timelapse{
+    width: 100%;
 }
 
 .finalhorse{

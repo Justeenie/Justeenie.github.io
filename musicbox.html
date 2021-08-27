@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="musicbox.css" />
+    <link rel="icon" href="favicon.ico">
+</head>
+
+
+<body>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="home.html#mylearning">My Learning</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="window.location.href='home.html#myproject'">
+                My Project
+            </button>
+            <div class="dropdown-content">
+                <a href="#3dprint">3D Printing</a>
+                <a href="#arduino">Arduino</a>
+                <a href="#lasercutting">Laser Cutting</a>
+                <a href="#webdev">Web Development</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contentbackground">
+        <div class="content">
+            <div class="item1">
+                <h1>Music Box</h1>
+            </div>
+
+            <div class="item2">
+                <h2>Laser Cutting and its applications</h2>
+
+                <p>
+                    Laser Cutting is a very efficient and effective way of cutting many pieces of a material such as
+                    acrylic, wood
+                    paper and many more. With its highly accurate cutting and impressive speed, its only real downside
+                    is that it
+                    can only cut 2D flat objects. This is not a huge limitation considering the fact that a 3D model
+                    such as a
+                    box, could easily be divided into 6 flat sides with tabs (small extrusions on each side) to later
+                    assemble.
+                </p>
+
+                <img src="cutter.jpg" class="cutter">
+                <h3>Model of the Laser Cutter in school</h3>
+
+                <h2>How to laser cut</h2>
+                <p>
+                    Laser cutting is actually pretty simple. Just have a 2D sketch ready (it could be a 2D view of a
+                    flat 3D model piece)
+                    and export it to CorelDraw and position the pieces together closely on one area of the canvas (in
+                    this case, it would
+                    be the area of the plywood/acrylic). I was taught to always keep the pieces tightly fitted and close
+                    to one another on
+                    the canvas in order to furthur maximize the amount of useful area for future cuts. The
+                    <b>colours</b> of the lines on
+                    CorelDraw matter, red for cutting and green for engraving. Last but not least, the lines should all
+                    have 'hairline'
+                    thickness.
+                </p>
+                <div class="grid1">
+                    <img src="coreldraw.jpg" class="draw">
+                    <img src="red.jpg" class="red">
+                </div>
+
+
+                <p>
+                    Moving on, all that's left is to select the "jog" option and use the joystick to move the laser
+                    cutter to the starting
+                    position at the top-left corner of the board. The red button that looks similar to a star enables a
+                    laser pointer to
+                    help with the positioning of the starting point.
+                </p>
+
+                <img src="joystick.jpg" class="joystick">
+
+                <h2>My laser cutting assignment </h2>
+
+                <p>
+                    For my assignment, I was given the task to make a music box that has a movable lid with at least one
+                    engraving
+                    on it as a decoration. I decided to take it one step further and come up with a design slightly more
+                    unique! Since
+                    its a music box, I decided to make the box in a shape of a piano and engrave the keys of the piano
+                    as decoration.
+                    Below I will show you the process of how I designed my Music Box.
+                </p>
+
+                <h2>Using Fusion360 for 3D Modeling</h2>
+
+                <p>
+                    Before diving into the design of the music box, I needed to make the design parametric. It is simply
+                    defining parameters
+                    using variables and then proceeding to dimension the model using these variables, in that way, if I
+                    wanted to change the
+                    dimensions of the box I could easily change a single variable. One such situation where I had to
+                    utilize this was when I
+                    modelled using the thickness '3mm' but later had to change the thickness to '3.9mm' as that was the
+                    thickness of the plywood
+                    provided to me.
+                </p>
+
+                <img src="parametric.png" class="parametric">
+
+                <p>
+                    To laser cut flat, 2D pieces of wood and later assemble it into a 3D box, the simple approach would
+                    be divide the box
+                    into 6 flat sides (assuming its a 6 sided box), then later assemble it and glue it together. One
+                    issue is that the
+                    contact surface area for gluing the sides together maybe too small, therefore to deal with this I
+                    was taught to make
+                    tabs on the sides of the box that connects with other sides to interlock the sides.
+                </p>
+
+                <div class="grid2">
+                    <img src="side1.png" class="side1">
+                    <img src="side2.png" class="side2">
+                    <img src="joint.png" class="joint">
+                </div>
+
+                <p>
+                    For the sides of the box I need to make a 'hinge' that I could attatch the lid to and allow it to
+                    rotate for my lid
+                    to open and close. And to my suprise later on, the laser cut circles were basically perfect! I
+                    needed 2 of these,
+                    one for each side of the box so I utilized the mirrror feature to repeat this on the other side of
+                    the box.
+                </p>
+
+                <div class="grid3">
+                    <img src="side3.png" class="side3">
+                    <img src="joint2.png" class="joint2">
+                </div>
+
+                <p>
+                    Personally, the lid was the most challenging part to design. Just a flat lid with one extrusion on
+                    each side to attatch
+                    the lid to the hinge could not possibly be that challenging right? That's absolutely correct! It was
+                    only challenging
+                    for me due to me being paranoid of the small hinge snapping or the hinge getting loose after a
+                    period of time so I wanted
+                    to avoid literally fitting a square peg into a round hole. Instead I decided to design an extrusion
+                    slightly larger than the
+                    hinge and later on manually file it down to a circular shape.
+                </p>
+
+                <div class="grid4">
+                    <img src="lid.png" class="lid">
+                    <img src="hinge.png" class="hinge">
+                    <img src="joint3.png" class="joint3">
+                </div>
+
+                <p>
+                    The rest of the model are basically the repeat of above to make the stair like shape of my music
+                    box. I attatched
+                    all the sides at the top to the lid so that i could later fit the music crank inside without
+                    obstructions.
+                </p>
+
+
+            </div>
+            <div class="frame">
+                <iframe
+                    src="https://ichat2305.autodesk360.com/shares/public/SH919a0QTf3c32634dcf223b70781311bfde?mode=embed"
+                    allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"
+                    frameborder="0"></iframe>
+                <h3>Fusion360 Model of my Music Box</h3>
+            </div>
+
+            <div class="item3">
+                <p>
+                    Now, all that was left was to export it CorelDraw where I can now add engravings onto it as
+                    decoration
+                    and start the laser cutting process. Exporting is simply done by selecting the sketch of a body, and
+                    exporting
+                    it as a DXF file, this gives a 2D sketch which is dimensioned and would allow it to be imported to
+                    CorelDraw and
+                    cut by the machine.
+                </p>
+
+                <div class="grid5">
+                    <img src="sidesketch.png" class="sketch1">
+                    <img src="sidesketch2.png" class="sketch2">
+                    <img src="sketchdxf.png" class="sketch3">
+                </div>
+
+                <p>engravings are easily added by taking a picture and pasting it onto the canvas. The machine is able
+                    to engrave black and white images very clearly but even if the image is coloured, the machine will
+                    just use varying amounts of power and frequency to at least give it a differing shade. In my case, I
+                    chose to engrave some piano keys as well as some other decorations.
+                </p>
+
+                <img src="engrave.png" class="engrave">
+                <h3>Example of an engraving</h3>
+                <br>
+                <h2>The Cutting Process</h2>
+                <video class="vid1" controls>
+                    <source src="cutting.mp4" type="video/mp4">
+                </video>
+                <img src="Pieces.jpg" class="pieces">
+
+                <h1>The Final Music Box</h1>
+                <video class="vid2" controls>
+                    <source src="finalbox.mp4" type="video/mp4">
+                </video>
+                <h1>And That's It! The Music Box is Done!</h1>
+                <img src="finalbox.jpg" class="finalbox">
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

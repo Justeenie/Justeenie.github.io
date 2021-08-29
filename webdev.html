@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Some Joke Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="webdev.css" />
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="home.html#mylearning">My Learning</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="window.location.href='home.html#myproject'">
+                My Project
+            </button>
+            <div class="dropdown-content">
+                <a href="3dprinting.html">3D Printing</a>
+                <a href="arduino.html">Arduino</a>
+                <a href="lasercutting.html">Laser Cutting</a>
+                <a href="webdev.html">Web Development</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="contentbackground">
+        <div class="content">
+            <div class="item1">
+                <h1>Website Development</h1>
+                <p>
+                    Website development seemed like a very daughting task at the start, where my lecturer Mr Steven Chew
+                    told us to watch a <a href="https://www.youtube.com/watch?v=bWPMSSsVdPk&ab_channel=JakeWright">
+                        video by Jake Wright</a> as a start to learning the basics of website design. There are three
+                    basic "parts" of a website, a <b>.html</b> (HyperText Markup Language) which is the basic formatting
+                    and text of the webpage, a <b>.css</b> (cascading style sheet) which further helps with formatting,
+                    adding features, as well as make the webpage much more beautiful by adding backgrounds, pictures and
+                    more, last but
+                    not least there is a <b>.js</b> (javascript) which helps with more complex functions and features
+                    such as doing simple animations on a webpage. JavaScript is a programming language and is very
+                    versatile in its applications. However, I chose not to utilise JavaScript for this website as I did
+                    not find that it added much to my website and instead, concentrated on using css to make my webpage
+                    look neater.
+                </p>
+                <img src="htmlcssjs.png" class="imgstd">
+
+                <h2>Learning how to code html and css</h2>
+
+                <div class="grid1">
+                    <div class="grid1a">
+                        <p>
+                            Throughout this module, I felt that the best method for me to learn web design was to just
+                            get started with the website and use <a href="https://www.w3schools.com/">W3Schools</a> to
+                            help me whenever I hit a wall. In programming and coding, Google is my best friend and
+                            almost all issues I ran into could be solved as long as I took the time to look it up and
+                            learn.
+                        </p>
+                        <h3>Below, I will show you how I made some specific features I have added onto my website such
+                            as a navigation bar, clickable pictures that links onto different webpages and share a
+                            little on how I formatted my website.</h3>
+                    </div>
+                    <div class="grid1b">
+                        <img src="w3.png" class="imgstd">
+
+                    </div>
+                </div>
+
+                <h2>Navigation Bar</h2>
+
+                <div class="grid2">
+                    <div class="grid2a">
+                        <p>
+                            The Navigation Bar is the bar that you can see at the top of your screen no matter which
+                            page you are on on my website and regardless of where you scroll. I learnt how to do this
+                            with some help from the <a
+                                href="https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp">W3Schools</a>
+                            website
+                        </p>
+                    </div>
+                    <div class="grid2b">
+                        <h3>Navigation Bar code in html</h3>
+                        <img src="navhtml.png" class="imgstd">
+                    </div>
+                    <div class="grid2c">
+                        <h3>Navigation Bar code in css</h3>
+                        <img src="navcss.png" class="imgstd">
+                    </div>
+                    <div class="grid2d">
+                        <p>The navigation bar code in html basically decides the display of each "button" on the
+                            navigation bar the different <b>divisions</b> I added helps me to format the bar later on.
+                            The <b>href</b> essentially makes the text a hyperlink that in effect, will allow you to
+                            navigate to other pages on click.
+                        </p>
+                        <p>
+                            On the css code for the nav bar, I made the <b>position: fixed</b> to enable the navigation
+                            bar to stay at the top of the screen regardless of where the user scrolls. I do this as I
+                            find that it helps the user navigate easily without needing to scroll to the top of the
+                            webpage to access other pages of the website.
+                        </p>
+                    </div>
+
+
+                </div>
+                <h2>Clickable Pictures</h2>
+
+                <p>
+                    Clickable Pictures are not the same as the aforementioned <b>href</b> hyperlinks for the
+                    Navigation Bar. Instead, I ensured that the picture I has its own <b>division</b> and added an
+                    adress for the user to be redirected to onclick. I added a style (which could easily be done in
+                    the css code too) which changes the cursor to a pointer when hovering above the image to
+                    indicate to the user that the image is clickable.
+                </p>
+
+                <img src="onclick.png" class="imgstd">
+                <h3>Code referenced from my clickable Horse Chess Piece picture in the menu </h3>
+
+                <h2>Formatting</h2>
+                <p>
+                    Formatting of pictures and bodies of text was very challenging for me at first, but I eventually ran
+                    into a very useful css feature I could use to arrange everything exactly how I want it to be. It is
+                    a combination of placing all content into separate <b>divisions</b> and use <b>grid-areas</b> in css
+                    to place the divisions into different areas of a grid that I could customize to any way I like.
+                </p>
+                <grid class="grid3">
+                    <div class="grid3a">
+                        <img src="gridhtml.png" class="imgstd">
+                        <h3>Grid Areas code for html</h3>
+                    </div>
+                    <div class="grid3b">
+                        <img src="gridcss.png" class="imgstd">
+                        <h3>Grid Areas code for css</h3>
+                    </div>
+                </grid>
+
+                <p>
+                    I took this example directly from above to illustrate how it coding grid areas would look like. This
+                    is honestly my favourite way of formatting, although it is not extremely effiecient or elegant, it
+                    is definitely a very easy way of formatting my text and images together.
+                </p>
+                <p>
+                    In summary, website development is not very complex but there are many features that one can learn
+                    and add to their website. I enjoyed my time learning web design in this module and find it quite a
+                    practical skill.
+                </p>
+
+            </div>
+        </div>
+
+</body>
+
+</html>

@@ -131,3 +131,60 @@ body {
 .dividercut{
     grid-area: b;
 }
+
+.grid2 {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas:
+		'a b';
+	margin: 0 10% 0 10%;
+	padding: 10vh 0 10vh 0;
+	color: #48301c;
+	font-family: inherit;
+}
+
+.box{
+    grid-area: a;
+}
+
+.boxtab{
+    grid-area: b;
+}
+
+.grid3 {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas:
+		'a b';
+	margin: 0 10% 0 10%;
+	padding: 10vh 0 10vh 0;
+	color: #48301c;
+	font-family: inherit;
+}
+
+.sortingboard{
+    grid-area: a;
+}
+
+.supports{
+    grid-area: b;
+}
+
+.grid4 {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas:
+		'a b';
+	margin: 0 10% 0 10%;
+	padding: 10vh 0 10vh 0;
+	color: #48301c;
+	font-family: inherit;
+}
+
+.irsensor{
+    grid-area: a;
+}
+
+.testing{
+    grid-area: b;
+}

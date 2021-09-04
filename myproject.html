@@ -81,7 +81,74 @@
                         <source src="dividercut.mp4" type="video/mp4">
                     </video>
                 </div>
-                <p>The same process was done for creating the boxes </p>
+                <h2>Video of the assembly of the divider</h2>
+
+                <video class="imgstd" id="dividercut" controls>
+                    <source src="dividerfinal.mp4" type="video/mp4">
+                </video>
+
+                <p>The same process was done for creating the boxes to collect the coins. The only thing to take note
+                    was that I had to make it slightly smaller than the spaces in between the dividers (tolerance) to
+                    ensure that I can insert and remove the coin collection boxes with ease</p>
+                <div class="grid2">
+                    <img src="box.png" class="imgstd" id="box">
+                    <img src="boxtab.png" class="imgstd" id="boxtab">
+                </div>
+
+
+
+            </div>
+            <div class="item3" id="3dprinting">
+                <h2>3D Printing</h2>
+                <p>For my 3D printing components, I made a coin sorting board that will be slanted at specific angles
+                    with holes of ascending sizes to sort from smallest coins to largest coins. I researched the sizes
+                    of the coins from the government website and then added a little bit of tolerence for the coins to
+                    fall in. It took me 2 prints to perfect the size and positions of the holes (which im proud of
+                    haha). I also had to 3D print the supports as it had to be angled in multiple directions and at a
+                    specific angle. Below is the Fusion360 design of my 3D printed coin sorting board AND the supports:
+                </p>
+                <div class="grid3">
+                    <img src="sortingboard.png" class="imgstd" id="sortingboard">
+                    <img src="supports.png" class="imgstd" id="supports">
+                </div>
+            </div>
+            <div class="item4" id="arduino">
+                <h2>Arduino</h2>
+                <p>For my embedded microcontroller, I coded and attatched the IR sensors. They are attatched just below
+                    the holes on the coin sorting boards in order to detect the coins when they drop past the sensors.
+                    Below shows the video of the testing phase of the IR sensors where i used tape to position them and
+                    test the code.
+                </p>
+                <div class="grid4">
+                    <img src="irsensor.jpg" class="imgstd" id="irsensor">
+                    <video class="imgstd" id="testing" controls muted>
+                        <source src="testing.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <p>The coding was neither extremely challenging nor was it a walk in the park, but I felt that my code
+                    was definitely NOT elegant nor was it very efficient. However, it worked incredibly well while
+                    testing it therefore I decided to continue using this code. The code shown below was done after
+                    integrating my own working code with my teammate, Guo Liang's LCD code. Basically, it scans through
+                    all the IR sensors in rapid succession one after the other, looking for any sensor that detects an
+                    objects. When a sensor detects an object, it records the timestamp down and 'blocks' the arduino
+                    from taking further readings from that sensor for a short period of time and adding one to the count
+                    of coins for that type (for example, +1 to $0.05 coins as it is the first IR sensor), and continues
+                    scanning through the other sensors rapidly. This allows the coin sorter to seemingly multi-task when
+                    in actual fact, is just performing actions very quickly.</p>
+                <h3>One part of the code</h3>
+                <img src="code.png" class="imgstd">
+
+                <h1>Final assembly of Coin Sorter V1</h1>
+                <img src="assembly.png" class="imgstd">
+                <p>This shows the dividers and boxes that I have laser cut being assembled with Guo Liang's overall
+                    casing (does NOT include the electrical components NOR the coin sorting board) Just a note, the two
+                    holes on the boxes for the coin collection was left for tabs that we added later on to enable
+                    removal of the coin boxes without much difficulty.
+                </p>
+                <h1>THE SHOWCASE</h1>
+                <video class="imgstd" controls muted>
+                    <source src="finalproject1.mp4" type="video/mp4">
+                </video>
 
             </div>
         </div>

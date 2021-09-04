@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Some Joke Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="myproject.css" />
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="home.html#mylearning">My Learning</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="window.location.href='home.html#myproject'">
+                My Project
+            </button>
+            <div class="dropdown-content">
+                <a href="myproject.html#3dprinting">3D Printing</a>
+                <a href="myproject.html#arduino">Arduino</a>
+                <a href="myproject.html#lasercutting">Laser Cutting</a>
+                <a href="webdev.html">Web Development</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="contentbackground">
+        <div class="content">
+            <div class="item1">
+                <h1>My Project: Coin Sorter V1</h1>
+                <p>For my final project in this module, I created did a group project with two of my classmates, Guo
+                    Liang and Ethan Ng. We decided to make a automatic coin sorter that will both sort and count coins.
+                    The limits of our project (at least for this version of the coin sorter) are as follows:
+                </p>
+                <ul>
+                    <li>can only sort the latest generation of coins (3rd gen Singapore coins)</li>
+                    <li>requires the user to input coins one at a time into a slot (eventually we planned to make it a
+                        pouch/ funnel where the user could pour all their coins in at once)</li>
+                    <li>maximum sorting speed of roughly 2 coins per second</li>
+                </ul>
+                <p>With these limitations in mind, we proceeded to design and model the 3d physical components</p>
+                <ul>
+                    <li>Overall casing</li>
+                    <li>Dividers of each type of coin ($1, $0.50, $0.20, $0.10 $0.05)</li>
+                    <li>Individual boxes to store the coins</li>
+                    <li>Coin sorting board (a slanted board with holes with increasing sizes for the coins to roll down
+                        and fall through)</li>
+                    <li>Pouch and Wheel (for the user to dump their coins in, followed by the wheel taking out only one
+                        coin at a time to put on the sorting board)</li>
+                </ul>
+                <p>And also here are the list of electrical components of our Coin Sorter V1</p>
+                <ul>
+                    <li>Arduino Uno board, the "computer" and "brain" of our sorting system</li>
+                    <li>Infared Sensors to count the amount of each coin detected</li>
+                    <li>Stepper motor to rotate the wheel</li>
+                    <li>LCD screen to display all the information such as amount of each type of coin counted</li>
+                    <li>Buttons to get around the menu to view information about the sorter and to control the machine
+                    </li>
+                </ul>
+
+                <p>Of course, we divided the work between ourselves to ensure everyone has at least one laser cutting
+                    component, one electrical component (embedded micro-controller that is connected to the arduino uno
+                    board and one 3D printed component. For me, the components that I have worked on is as follows:</p>
+                <ul>
+                    <li>Laser Cutting: Dividers of each type of coin AND Individual boxes to store the coins</li>
+                    <li>3D Printing: Coin sorting board</li>
+                    <li>Embedded microcontroller: Infared-Sensors (IR sensors) connected to the Arduino Uno board</li>
+                </ul>
+
+            </div>
+            <div class="item2" id="lasercutting">
+                <h2>Laser Cutting</h2>
+                <p>I had two different laser cutting components, the first of which is to make the dividers. I use the
+                    used Fusion360 to model the dividers with tabs to connect them easily later on</p>
+                <div class="grid1">
+                    <img src="divider.png" class="imgstd" id="divider">
+                    <video class="imgstd" id="dividercut" controls>
+                        <source src="dividercut.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <p>The same process was done for creating the boxes </p>
+
+            </div>
+        </div>
+
+</body>
+
+</html>

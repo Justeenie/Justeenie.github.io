@@ -1,0 +1,133 @@
+/*HTML "SET UP"*/
+html {
+	scroll-behavior: smooth;
+  }
+
+/*=====NAV BAR STARTS HERE=====NAV BAR STARTS HERE=====NAV BAR STARTS HERE=====NAV BAR STARTS HERE=====NAV BAR STARTS HERE=====NAV BAR STARTS HERE=====NAV BAR STARTS HERE===== */
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	/*display: flex;
+	justify-content: space-around; */
+	overflow: hidden;
+	background-color: #55CBCD;
+	font-family: inherit;
+	z-index: 9999;
+}
+
+	/* Links inside the navbar */
+.navbar a{
+	font-size: 20px;
+	padding: 10px 0px 10px 0px;
+	float: left;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	width: 25%;
+}
+
+/* The dropdown container */
+.dropdown {
+	overflow: hidden;
+}
+
+
+
+/* Dropdown button */
+.dropdown .dropbtn {
+	width: 100%;
+	padding: 10px 0px 10px 0px;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	color: white;
+	background-color: #55CBCD;
+	font-family: inherit;
+	margin: 0;
+	z-index: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: white;
+	color: #55CBCD;
+	/*box-shadow: -4px 8px 16px 0px rgba(0,0,0,0.2);  shadow on hover [DISABLED]*/
+}
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+	display: none;
+	position: fixed;
+	background-color: white;
+	
+	z-index: 9999;
+	text-align:center;
+	width: 100%;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 10px 10px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
+/*=====NAV BAR ENDS HERE=====NAV BAR ENDS HERE=====NAV BAR ENDS HERE=====NAV BAR ENDS HERE=====NAV BAR ENDS HERE=====NAV BAR ENDS HERE=====NAV BAR ENDS HERE===== */
+
+/* BODY "META" INFO */
+body {
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	background-color: #55CBCD;
+	position: center;
+}
+
+.contentbackground {
+	background: url("background.png") top center fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.content{
+    padding: 10vh 10vw 10vh 10vw;
+    line-height: 1.75;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Grid sutff is all here */
+.imgstd{
+	width: 100%;
+}
+
+.grid1 {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas:
+		'a b';
+	margin: 0 10% 0 10%;
+	padding: 10vh 0 10vh 0;
+	color: #48301c;
+	font-family: inherit;
+}
+
+.divider{
+    grid-area: a;
+}
+
+.dividercut{
+    grid-area: b;
+}
